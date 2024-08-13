@@ -26,6 +26,11 @@ public class Main {
 
         // 도서관에서 책 대여
         library.rentBook(bookA);
+        //대여 처리 되었는지 확인용
+        System.out.println("절취선================================================");
+        library.searchBook("제목1");
+        System.out.println("절취선================================================");
+
 
         // 도서관에서 책 반납
         library.returnBook(bookA);
