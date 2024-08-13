@@ -4,13 +4,12 @@ import java.util.ArrayList;
 
 public class Library {
     // 클래스 속성
-    ArrayList<Book> booklist = new ArrayList<Book>();
+    ArrayList<Book> booklist;
 
-    // 생성자(책 목록 초기화 필요) <== 질문할 내용 : 초기화는 바로 위에서 된 것 아닌가요 ㅠㅠ
-    // 잘 모르겠습니다...
-    /*public Library(ArrayList<Book> books) {
-        this.booklist = books;
-    }*/
+    // 생성자
+    public Library(){
+        booklist = new ArrayList<>();
+    }
 
     // 메서드
     // 도서관에 책 추가
