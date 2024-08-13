@@ -13,8 +13,22 @@ public class Main {
         Book bookD = new Book("제목4","작가4",true);
 
         // 도서관에 책 추가
+        library.addBook(bookA);
+        library.addBook(bookB);
+        library.addBook(bookC);
+        library.addBook(bookD);
 
+        // 도서관에서 책 제거
+        library.removeBook(bookD);
 
+        // 도서관의 모든 책 출력
+        library.printAllBooks();
+
+        // 도서관에서 책 대여
+        library.rentBook(bookA);
+
+        // 도서관에서 책 반납
+        library.returnBook(bookA);
 
 
 
