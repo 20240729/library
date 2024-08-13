@@ -31,4 +31,35 @@ public class Library {
             }
         }
     }
+
+    // 도서관의 모든 책 조회
+    public void printAllBooks() {
+        for (Book book : booklist) {
+            book.printBookInfo();
+        }
+    }
+
+    // 도서관에서 책 대여
+    public void rentBook (Book book){
+        if(book.getIsAvailable()){
+            book.setIsAvailable(false);
+        }else {
+            System.out.println("이미 대여중인 도서입니다.");
+        }
+    }
+
+    // 도서관에서 책 대여
+    public void returnBook (Book book){
+        if(book.getIsAvailable()){
+            System.out.println("이미 반납된 도서입니다.");
+        }else {
+            book.setIsAvailable(true);
+        }
+    }
+
+
+
+
+
+
 }
